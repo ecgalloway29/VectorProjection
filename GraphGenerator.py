@@ -70,7 +70,7 @@ def generate_csv():
 
     line = "{image:35s},{volume:.3f},{VPM:.5f}\n"
 
-    output_file.write("Image,Volume,VPM\n")
+    output_file.write("Image,Volume,Concentration\n")
 
     for v in range(len(VPM)):
         output_file.write(line.format(image=im_names[v], volume=volumes[v], VPM=VPM[v]))
